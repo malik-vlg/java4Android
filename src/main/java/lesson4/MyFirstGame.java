@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class MyFirstGame {
     private static final int SIZE = 3;
-    private static final int DOTS_TO_WIN = 3;
     private static final char DOT_EMPTY = '-';
     private static final char DOT_X = 'x';
     private static final char DOT_O = 'o';
