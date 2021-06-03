@@ -7,7 +7,7 @@ public class List {
         cat1.jump(1);
         cat1.swim(6);
         System.out.println();
-        Dog dog = new Dog("Дружок", 600, 0.5f, 20);
+        Dog dog = new Dog("Дружок", 500, 0.5f, 10);
         dog.run(500);
         dog.jump(0.2f);
         dog.swim(13);
