@@ -15,13 +15,13 @@ public class MainClass {
 
         Plate plate = new Plate(40);
         plate.info();
-        for (int i = 0; i < allCats.length; i++) {
-            if(allCats[i].fullness == false && allCats[i].appetite < plate.food){
-                allCats[i].eat(plate);
-                allCats[i].fullness = true;
-                System.out.println(allCats[i].name + " поел");
+        for (Cat allCat : allCats) {
+            if (!allCat.fullness && allCat.appetite < plate.food) {
+                allCat.eat(plate);
+                allCat.fullness = true;
+                System.out.println(allCat.name + " поел");
             } else {
-                System.out.println(allCats[i].name + " остался голодный");
+                System.out.println(allCat.name + " остался голодный");
             }
 
         }
