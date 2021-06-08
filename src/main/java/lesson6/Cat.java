@@ -9,7 +9,6 @@ public class Cat extends Animal {
         super(name);
         this.maxRun = maxRun;
         this.maxJump = maxJump;
-        this.maxSwim = maxSwim;
     }
 
     public void run(int leight) {
