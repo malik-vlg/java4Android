@@ -15,8 +15,8 @@ public class Main2 {
         int arrItem = new Random().nextInt(words.length - 1);
         String wordToGuess = words[arrItem];
 
-        System.out.println("Привет! Я загадал слово из списка " + Arrays.toString(words) +
-                " Твоя задача, удадать данное слово");
+        System.out.println("Привет! Я загадал слово из списка \n" + Arrays.toString(words) + "\n" +
+                "Твоя задача, удадать данное слово");
 
     }
 }
