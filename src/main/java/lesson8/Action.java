@@ -9,3 +9,5 @@ public interface Action {
 interface Barrier{
 
 }
+// Не совсем корректно работает, не понимаю почему((
+// нужна помощь
