@@ -42,19 +42,17 @@ public class Main {
 
             System.out.println("Участник № " + i);
 
-            if (barriers[0] instanceof Treadmill) {
-                Treadmill treadmill = (Treadmill) barriers[0];
-                subject[i].run(treadmill);
-                if (!subject[i].isResult()) {
-                    continue;
-                }
-                if (barriers[i] instanceof Wall) {
-                    Wall wall = (Wall) barriers[1];
-                    subject[i].jump(wall);
-                    subject[i].isResult();
-                }
-
+            Treadmill treadmill = (Treadmill) barriers[0];
+            subject[i].run(treadmill);
+            if (!subject[i].isResult()) {
+                continue;
             }
+            if (barriers[i] instanceof Wall) {
+                Wall wall = (Wall) barriers[1];
+                subject[i].jump(wall);
+                subject[i].isResult();
+            }
+
         }
     }
 }
