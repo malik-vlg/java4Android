@@ -5,3 +5,7 @@ public interface Action {
     void jump(Wall wall);
     boolean isResult();
 }
+
+interface Barrier{
+
+}
