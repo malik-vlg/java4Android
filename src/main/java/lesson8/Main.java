@@ -7,7 +7,7 @@ public class Main {
 
         Barrier[] barriers = new Barrier[2];
 
-        Action[] subject = new Action[10];
+        Action[] subject = new Action[9];
 
         Random random = new Random();
 
@@ -16,8 +16,8 @@ public class Main {
 
         for (int i = 0; i < barriers.length; i++) {
 
-            distance = random.nextInt(100);
-            height = random.nextInt(10);
+            distance = random.nextInt(70);
+            height = random.nextInt(7);
 
             if (i < barriers.length / 2) {
                 barriers[i] = new Treadmill(distance);
@@ -42,12 +42,15 @@ public class Main {
 
             System.out.println("Участник № " + i);
 
-            Treadmill treadmill = (Treadmill) barriers[0];
-            subject[i].run(treadmill);
-            if (!subject[i].isResult()) {
-                continue;
+            if (barriers[0] instanceof Treadmill) {
+                Treadmill treadmill = (Treadmill) barriers[0];
+                subject[i].run(treadmill);
+                if (!subject[i].isResult()) {
+                    continue;
+                }
             }
-            if (barriers[i] instanceof Wall) {
+
+            if (barriers[1] instanceof Wall) {
                 Wall wall = (Wall) barriers[1];
                 subject[i].jump(wall);
                 subject[i].isResult();
