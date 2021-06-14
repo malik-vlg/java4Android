@@ -12,15 +12,17 @@ public class Main {
         String[][] arrTwo = new String[][]{
                 {"1", "2", "3", "4"},
                 {"5", "6", "7", "8"},
-                {"9", "10", "11", "12"}
+                {"9", "10", "11", "12"},
+                {"13", "14", "15", "16"}
+
         };
 
         try{
-            transformAndSumArr(arrOne);
+            transformAndSumArr(arrTwo);
         } catch (MyArraySizeException e){
             System.out.println("Массив выведен не верно!");
         } catch (MyArrayDataException e){
-            System.out.println("Ошибка " + e.i + e.j);
+            System.out.println("Ошибка " + e.i + " - " + e.j);
         }
     }
 
@@ -45,6 +47,6 @@ public class Main {
             }
 
         }
-        System.out.println(sum);
+        System.out.println("Сумма элементов в массиве равна " + sum);
     }
 }

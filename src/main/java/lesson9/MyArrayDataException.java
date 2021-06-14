@@ -5,7 +5,7 @@ public class MyArrayDataException extends Exception {
     public int j;
 
 
-    public MyArrayDataException(int x, int y){
+    public MyArrayDataException(int i, int j){
         this.i = i;
         this.j = j;
     }
