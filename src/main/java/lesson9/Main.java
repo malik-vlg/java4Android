@@ -1,6 +1,7 @@
 package lesson9;
 
 public class Main {
+
     public static void main(String[] args) {
         String[][] arrOne = new String[][]{
                 {"1", "2", "3", "4"},
@@ -23,7 +24,7 @@ public class Main {
         }
     }
 
-    public static void  transformAndSumArr(String[][] arrOne) throws MyArrayDataException, MyArraySizeException{
+    public static void transformAndSumArr(String[][] arrOne) throws MyArrayDataException, MyArraySizeException{
         int transform;
         int sum = 0;
         int maxLine = arrOne.length;
