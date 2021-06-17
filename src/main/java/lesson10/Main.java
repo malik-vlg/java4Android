@@ -42,15 +42,15 @@ public class Main {
 
 
         for (String number : phoneDirectory.getNumbers("Петров")){
-            System.out.println("Петров" + number);
+            System.out.println("Петров " + number);
         }
 
         for (String number : phoneDirectory.getNumbers("Васильев")) {
-            System.out.println("Васильев" + number);
+            System.out.println("Васильев " + number);
         }
 
         for (String number : phoneDirectory.getNumbers("Кардашьян")) {
-            System.out.println("Кардашьян" + number);
+            System.out.println("Кардашьян " + number);
         }
     }
 }
